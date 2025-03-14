@@ -1,0 +1,50 @@
+general {
+    color_good = "#d8d8d8"
+    color_degraded = "#c9ae38"
+    color_bad = "#c6341b"
+    colors = true
+    interval = 1
+    markup = "pango"
+}
+
+order += "wireless wlp3s0"
+order += "cpu_usage"
+order += "memory"
+order += "battery 0"
+order += "tztime local"
+
+wireless wlp3s0 {
+    format_up = "<span color='#fc5fa3'>WLAN</span> %ip : %essid"
+    format_down = "WLAN down"
+}
+
+cpu_usage {
+    format = "<span color='#fc5fa3'>CPU</span> %usage"
+    max_threshold = 80
+    degraded_threshold = 60
+}
+
+memory {
+   format = "<span color='#fc5fa3'>MEM</span> %used <span color='#d8d8d8'>/ %total</span>"
+   unit = "GiB"
+   threshold_critical = "1024M"
+   threshold_degraded = "3584M"
+}
+
+battery 0 {
+    format = "%status %percentage"
+    format_down = "<span color='#fc5fa3'>BAT N/A</span>"
+    status_chr = "<span color='#79f15d'>PWR</span>"
+    status_bat = "<span color='#fc5fa3'>BAT</span>"
+    status_full = "<span color='#79f15d'>FUL</span>"
+    status_idle = "<span color='#fc5fa3'>IDL</span>"
+    format_percentage = "%.0f%s"
+    threshold_type = "percentage"
+    low_threshold = 15
+}
+
+tztime local {
+    format = "%Y-%m-%d <span color='#fc5fa3'>%H:%M</span> "
+    hide_if_equals_localtime = false
+}
+

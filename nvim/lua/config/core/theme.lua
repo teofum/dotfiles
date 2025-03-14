@@ -1,0 +1,15 @@
+-- Theme colors
+vim.g.base_text         = "#d8d8d8"
+vim.g.dark_text         = "#828482"
+vim.g.base_bg           = "#000000"
+vim.g.bright_bg         = "#1f1f24"
+vim.g.xcode_pink        = "#fc5fa3"
+vim.g.xcode_pink_dark   = "#3f1829"
+vim.g.xcode_teal        = "#4ec9b0"
+vim.g.xcode_teal_dark   = "#67b7a4"
+vim.g.xcode_cyan        = "#5dd8ff"
+vim.g.xcode_cyan_dark   = "#41a1c0"
+vim.g.xcode_purple      = "#d0a8ff"
+vim.g.xcode_purple_dark = "#a167e6"
+vim.g.xcode_orange      = "#fc6a5d"
+

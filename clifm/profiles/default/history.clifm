@@ -1,0 +1,121 @@
+edit
+#1741364117
+?
+#1741364137
+hh
+#1741364138
+ll
+#1741364146
+.config/
+#1741364150
+alacritty/
+#1741364154
+alacritty.toml
+#1741364317
+clear
+#1741390471
+.config/
+#1741390478
+i3/config
+#1741390735
+man dmenu
+#1741391771
+i3/config
+#1741395877
+ll
+#1741395971
+mkdir nvim
+#1741396002
+nvim/
+#1741396040
+touch init.vim
+#1741396042
+init.vim
+#1741396257
+rofi/config.rasi
+#1741398549
+rofi -no-config -dump-theme | most
+#1741401213
+clear
+#1741401223
+ll
+#1741401237
+i3/config
+#1741401801
+exit
+#1741401900
+ll
+#1741401905
+i3/config
+#1741402145
+ll
+#1741402153
+rofi/config.rasi
+#1741403708
+nvim/init.vim
+#1741403801
+alacritty/alacritty.toml
+#1741405071
+polybar
+#1741405151
+i3/config
+#1741405229
+mkdir polybar
+#1741405231
+polybar/
+#1741405253
+n
+#1741405268
+la
+#1741405271
+launch.fish
+#1741405433
+chmod +x launch.fish
+#1741405437
+clear
+#1741405439
+ll
+#1741405450
+la
+#1741405752
+polybar/config.ini
+#1741409339
+clear
+#1741409342
+ll
+#1741409346
+clear
+#1741409398
+mkdir yambar
+#1741453537
+ll
+#1741453547
+otb\ -\ Bm\ \(linux\ bitmap\)/
+#1741453564
+grep a
+#1741453586
+filter JPN
+#1741453629
+cmd
+#1741455177
+filter JPN
+#1741455186
+ll
+#1741455318
+otb\ -\ Bm\ \(linux\ bitmap\)/
+#1741455325
+/JPN
+#1741455330
+ft JPN
+#1741455420
+ll
+#1741455427
+mkdir fonts
+#1741455432
+sudo mkdir fonts
+#1741455515
+cp Bm437_DOS-V_re_JPN12.otb /usr/local/share/fonts/old_jpn12.otb
+#1741455521
+sudo cp Bm437_DOS-V_re_JPN12.otb /usr/local/share/fonts/old_jpn12.otb
+#1741455528
+fonts/

@@ -1,0 +1,40 @@
+[window]
+dynamic_padding = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.primary]
+background = "#000000"
+foreground = "#d8d8d8"
+bright_foreground = "#fc5fa3"
+
+[colors.normal]
+black   = "#181818"
+red     = "#c6341b"
+green   = "#6fa430"
+yellow  = "#c9ae38"
+blue    = "#4f78ae"
+magenta = "#83668b"
+cyan    = "#46a4a8"
+white   = "#d8d8d8"
+
+[colors.bright]
+black   = "#6b6b6b"
+red     = "#e15140"
+green   = "#a9e15d"
+yellow  = "#f9eb77"
+blue    = "#8caed4"
+magenta = "#b595b4"
+cyan    = "#73e2e6"
+white   = "#ffffff"
+
+[font]
+normal = { family = "Terminus", style = "Regular" }
+size = 6
+builtin_box_drawing = false
+
+[keyboard]
+bindings = [
+    { key = "Return", mods = "Super | Shift", action = "SpawnNewInstance" }
+]
