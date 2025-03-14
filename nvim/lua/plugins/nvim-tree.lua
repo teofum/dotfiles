@@ -28,6 +28,7 @@ return {
             folder = false,
             folder_arrow = false,
           },
+          git_placement = "after",
           glyphs = {
             folder = {
               arrow_closed = "-",
