@@ -1,4 +1,4 @@
 return {
-    "RaafatTurki/hex.nvim",
-    opts = {},
+  "RaafatTurki/hex.nvim",
+  opts = {},
 }
