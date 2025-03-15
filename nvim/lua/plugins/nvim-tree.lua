@@ -22,6 +22,7 @@ return {
           },
           inline_arrows = false,
         },
+        highlight_git = "name",
         icons = {
           show = {
             file = false,
@@ -30,6 +31,7 @@ return {
           },
           git_placement = "after",
           glyphs = {
+            modified = "*",
             folder = {
               arrow_closed = "-",
               arrow_open = "+",
@@ -39,7 +41,7 @@ return {
               staged = "+",
               unmerged = "↑",
               renamed = "R",
-              untracked = "*",
+              untracked = "U",
               deleted = "D",
               ignored = "I",
             },

@@ -15,7 +15,7 @@ local theme = {
     c = { bg = vim.g.base_bg, fg = vim.g.base_text },
   },
   replace = {
-    a = { bg = vim.g.xcode_orange, fg = vim.g.base_bg },
+    a = { bg = vim.g.xcode_orange_dark, fg = vim.g.base_bg },
     b = { bg = vim.g.base_bg, fg = vim.g.base_text },
     c = { bg = vim.g.base_bg, fg = vim.g.base_text },
   },
