@@ -31,7 +31,7 @@ local base_bg = hsl("#000000")
 local bright_bg = hsl("#292830")
 
 local xcode_pink = hsl("#ff7ab2")
-local xcode_pink_dark = hsl("#98486a")
+local xcode_pink_dark = hsl("#d847a4")
 local xcode_teal = hsl("#acf2e4")
 local xcode_teal_dark = hsl("#78c2b3")
 local xcode_cyan = hsl("#6bdfff")
