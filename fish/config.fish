@@ -13,4 +13,9 @@ switch (uname)
         end
     case Darwin
         /opt/homebrew/bin/brew shellenv | source
+
+        set -x CFLAGS "-isysroot $(xcrun -show-sdk-path) $CFLAGS"
+        set -x CXXFLAGS "-isysroot $(xcrun -show-sdk-path) $CXXFLAGS"
+        set -x LDFLAGS "-L$(xcrun -show-sdk-path)/usr/lib $LDFLAGS"
+        set -x SDK_PATH "$(xcrun -show-sdk-path)"
 end
