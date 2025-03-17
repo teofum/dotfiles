@@ -4,6 +4,7 @@ return {
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
     { "antosha417/nvim-lsp-file-operations", config = true },
+    { "mrcjkb/rustaceanvim", version = "^5", lazy = false },
   },
   config = function()
     local lspconfig = require("lspconfig")
@@ -53,6 +54,13 @@ return {
       vim.keymap.set("n", "<leader>rs", "<cmd>LspRestart<cr>", opts)
     end
 
+    -- Rustaceanvim doesn't need setup, but we still set the keymaps:
+    vim.g.rustaceanvim = {
+      server = {
+        on_attach = on_attach,
+      },
+    }
+
     local capabilities = cmp_nvim_lsp.default_capabilities()
 
     lspconfig.html.setup({ capabilities = capabilities, on_attach = on_attach })
@@ -79,6 +87,12 @@ return {
       },
     })
 
-    lspconfig.clangd.setup({ capabilities = capabilities, on_attach = on_attach })
+    lspconfig.clangd.setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+      init_options = {
+        fallback_flags = { "--std=c++20" }, -- If no config is present, assume C++ 20
+      },
+    })
   end,
 }
