@@ -56,7 +56,7 @@ local theme = lush(function(injected_functions)
   return {
     Normal({ bg = base_bg, fg = base_text }), -- Normal text
     Cursor({ bg = Normal.fg, fg = Normal.bg }), -- Character under the cursor
-    CursorLine({}), -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLine({ bg = "#292830" }), -- Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
 
     LineNr({ fg = dark_text.da(50) }), -- Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
     CursorLineNr({ fg = dark_text }), -- Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
