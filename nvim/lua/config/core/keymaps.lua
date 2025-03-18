@@ -7,6 +7,12 @@ vim.keymap.set({ "n", "v" }, "k", "k") -- k = up
 vim.keymap.set({ "n", "v" }, "l", "j") -- l = down
 vim.keymap.set({ "n", "v" }, ";", "l") -- ; = right
 
+-- Move fast zoom
+vim.keymap.set({ "n", "v" }, "<S-j>", "0") -- j = left
+vim.keymap.set({ "n", "v" }, "<S-k>", "10k") -- k = up
+vim.keymap.set({ "n", "v" }, "<S-l>", "10j") -- l = down
+vim.keymap.set({ "n", "v" }, "<C-S-;>", "$") -- ; = right
+
 -- Also remap the Ctrl+[key] combos, used by the tmux navigator plugin
 vim.g.tmux_navigator_no_mappings = 1
 vim.keymap.set("n", "<C-j>", "<cmd>TmuxNavigateLeft<cr>") -- j = left

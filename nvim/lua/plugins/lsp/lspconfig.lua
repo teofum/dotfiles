@@ -48,7 +48,7 @@ return {
       vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
 
       opts.desc = "Show documentation"
-      vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+      vim.keymap.set("n", "<C-,>", vim.lsp.buf.hover, opts)
 
       opts.desc = "Restart LSP"
       vim.keymap.set("n", "<leader>rs", "<cmd>LspRestart<cr>", opts)
