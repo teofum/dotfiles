@@ -69,6 +69,15 @@ local theme = lush(function(injected_functions)
     DiffDelete({ fg = status_error }), -- Diff mode: Deleted line |diff.txt|
     DiffText({ fg = status_hint }), -- Diff mode: Changed text within a changed line |diff.txt|
 
+    -- Custom HL groups for modes
+    ModeNormal({ Normal }),
+    ModeInsert({ fg = xcode_pink }),
+    ModeVisual({ fg = xcode_purple_dark }),
+    ModeCommand({ fg = xcode_teal }),
+    ModeReplace({ fg = xcode_orange_dark }),
+    ModePending({ fg = xcode_purple }),
+    ModeSpecial({ fg = status_ok }),
+
     -- Nvim Tree
     Directory({ fg = xcode_teal }), -- Directory names (and other special names in listings)
     NvimTreeExecFile({ fg = xcode_cyan }),
@@ -121,8 +130,8 @@ local theme = lush(function(injected_functions)
     -- SpellCap       { }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
     -- SpellLocal     { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
     -- SpellRare      { }, -- Word that is recognized by the spellchecker as one that is hardly ever used. |spell| Combined with the highlighting used otherwise.
-    -- StatusLine     { }, -- Status line of current window
-    -- StatusLineNC   { }, -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
+    StatusLine({}), -- Status line of current window
+    StatusLineNC({}), -- Status lines of not-current windows. Note: If this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     -- TabLine        { }, -- Tab pages line, not active tab page label
     -- TabLineFill    { }, -- Tab pages line, where there are no labels
     -- TabLineSel     { }, -- Tab pages line, active tab page label
